@@ -1,6 +1,5 @@
-FROM alpine:3
-WORKDIR /app
+FROM ubuntu:latest
 
-COPY entrypoint.sh /app/entrypoint.sh
+COPY entrypoint.sh /tmp/entrypoint.sh
 
-ENTRYPOINT [ "/app/entrypoint.sh" ]
+ENTRYPOINT [ "/tmp/entrypoint.sh" ]
